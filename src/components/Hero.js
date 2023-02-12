@@ -1,15 +1,16 @@
 import React from 'react';
-import { Card, Row, Col, Button } from 'react-bootstrap';
+import { Card, Row, Col, Image } from 'react-bootstrap';
+import image1 from '../assets/night.jpg';
+
+import './Hero.scss';
 
 const Hero = () => (
     <Card className='text-center text-light hero'>
-        <Row className='my-lg-5 d-flex gap-5 hero_row'>
-            <Col lg className='text-lg-end my-5'>
-                <h2>Tire sua Dúvida On-Line</h2>
-                <Button lg className='button1' variant='light'>Fale agora</Button>
-            </Col>
-            <Col >
-                
+        <Row className='my-lg-5 hero_row'>
+            <Col className='hero_1'>impulsionamos transformações</Col>
+            <Col>
+            <Image className='' src={image1}/>
+            <h1>Mattos Filho lança programa de inovação que conecta startups a empresas de diferentes setores</h1>
             </Col>
         </Row>
     </Card>
